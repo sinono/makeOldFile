@@ -2,7 +2,7 @@
 HTMLファイルのoldファイルを作るスクリプト
 #>
 
-#Get-ChildItem
+Get-ChildItem
 
 #今日の日付の文字列
 $txtYmd = Get-Date -Format "yyMMdd"
