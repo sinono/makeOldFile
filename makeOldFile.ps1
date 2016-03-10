@@ -21,7 +21,7 @@ function makeOldFile ($ext) {
     foreach($f in $files) {
           
         #現在のファイル名（拡張子を除く）
-        $currentFileName = $f.name.substring(0,$f.name.length -5 )
+        $currentFileName = $f.name.substring(0,$f.name.length - ($ext.length + 1) )
         
         #oldファイルを作成
         copy-item $f ($currentFileName + "_old" + $txtYmd + "." + $ext)
